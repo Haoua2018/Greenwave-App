@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <!--couleur vert-->
+    <ion-title>
+       GreenWave
+    </ion-title>
+      <ion-icon></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding=" " >
+    <ion-card>
+      <!--conteneur de-->
+        <ion-card-content class="contenu">
+            <div class = "list">
+                <p [ngStyle]="{'color':'white'}"> Greenwave</p>
+                <ion-label class = "item item-input">
+                    <input type="text"  placeholder="Username"/>
+                </ion-label>
+                <br/>
+                <br/>
+                <ion-label class = "item item-input">
+                    <input type = "password" placeholder = "Password "/>
+                </ion-label>
+                <p [ngStyle]="{'color':'white'}"> Mot de passe oublié?</p>
+            </div>
+            <ion-button>
+                Connexion
+            </ion-button>
+        </ion-card-content>
+    </ion-card>
+     </ion-content>
