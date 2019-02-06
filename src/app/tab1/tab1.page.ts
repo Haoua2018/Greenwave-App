@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, NgModule
+} from '@angular/core';
+import { ReactiveFormsModule , FormsModule, FormBuilder
+} from '@angular/forms';
 
 @Component({
   selector: 'app-tab1',
@@ -6,8 +9,14 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+ }
+export class Membre {
   membre = {
-    login: String,
-    password : String,
+    username: String,
+    password: String,
+    constructor(membre: { password: StringConstructor; username: StringConstructor; constructor(name: String): void; }) {
+      this.membre = membre;
+    }
+
   };
 }

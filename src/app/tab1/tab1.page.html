@@ -4,29 +4,38 @@
     <ion-title>
        GreenWave
     </ion-title>
-      <ion-icon></ion-icon>
+      <ion-icon src="/assets/icon/logo_greenwave.svg" font-size=1200px  size="large"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding=" " >
     <ion-card>
-      <!--conteneur de-->
-        <ion-card-content class="contenu">
-            <div class = "list">
+      <!--conteneur de la zone de saisie de username et password-->
+                <ion-card-content class="contenu">
+                    <!--formulaire de la zone de saisie de username et password-->
+                    <form #f="ngForm" (ngSubmit)="OnSubmitForm(f)">
+
+                    <div class = "list">
                 <p [ngStyle]="{'color':'white'}"> Greenwave</p>
-                <ion-label class = "item item-input">
-                    <input type="text"  placeholder="Username"/>
+                <ion-label>
+                    Username
                 </ion-label>
+                <ion-input  [placeholder]="Username" type="text"> </ion-input>
                 <br/>
-                <br/>
-                <ion-label class = "item item-input">
-                    <input type = "password" placeholder = "Password "/>
+                <ion-label>
+                    Password
                 </ion-label>
+                <ion-input  [placeholder]="Password" type="password" [clearOnEdit]="true"> </ion-input>
+                <br/>
+
                 <p [ngStyle]="{'color':'white'}"> Mot de passe oublié?</p>
             </div>
+
             <ion-button>
                 Connexion
             </ion-button>
+
+</form>
         </ion-card-content>
     </ion-card>
      </ion-content>
