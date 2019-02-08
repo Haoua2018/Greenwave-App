@@ -1,1 +1,18 @@
+ion-content{
+  --background: url('../../assets/images/background_public.jpg') no-repeat 50% 10% ;
+}
+ion-icon{
+  width: 200px;
+  height: 70px;
+ // font-size:large;
+ }
+// le conteneur
+.contenu {
 
+  align-self: center;
+  background: white;
+  //rgba(255,255,255,0.5);
+}
+ion-card-content{
+  --background-color: white;
+}

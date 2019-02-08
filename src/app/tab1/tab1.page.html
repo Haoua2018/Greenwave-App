@@ -1,13 +1,8 @@
 <ion-header>
-  <ion-toolbar>
-    <!--couleur vert-->
-    <ion-title>
-       GreenWave
-    </ion-title>
-      <ion-icon src="/assets/icon/logo_greenwave.svg" font-size=1200px  size="large"></ion-icon>
-  </ion-toolbar>
+      <!--le logo -->
+    <ion-icon src="/assets/icon/logo_greenwave.svg" ></ion-icon>
 </ion-header>
-
+<!--le corps de l'application -->
 <ion-content padding=" " >
     <ion-card>
       <!--conteneur de la zone de saisie de username et password-->
@@ -17,15 +12,15 @@
 
                     <div class = "list">
                 <p [ngStyle]="{'color':'white'}"> Greenwave</p>
-                <ion-label>
+                <ion-label >
                     Username
                 </ion-label>
-                <ion-input  [placeholder]="Username" type="text"> </ion-input>
+                <ion-input  placeholder="Username" type="text"> </ion-input>
                 <br/>
                 <ion-label>
                     Password
                 </ion-label>
-                <ion-input  [placeholder]="Password" type="password" [clearOnEdit]="true"> </ion-input>
+                <ion-input  placeholder="Password" type="password" [clearOnEdit]="true"> </ion-input>
                 <br/>
 
                 <p [ngStyle]="{'color':'white'}"> Mot de passe oublié?</p>

@@ -1,8 +1,4 @@
-.welcome-card ion-img {
-  max-height: 35vh;
-  overflow: hidden;
-}
-
+// le conteneur
   .contenu {
   //  background-image: url("~src/assets/images/background_public.jpg");
    align-self: center;
@@ -10,19 +6,34 @@
             //rgba(255,255,255,0.5);
   }
 
+//paramétrage de ion-content
 ion-content{
   --background: url('../../assets/images/background_public.jpg') no-repeat 50% 10% ;
-
          }
+//paramétrage de paragraphe p
 .p{
   color: white;
   font-size: medium;
-  font-weight: bold
- //--ion-text--color:light ;
+  font-weight: bold;
+--ion-text--color:light ;
+}
+//paramétrage du titre
+ion-title{
+  text-align: center;
 }
 
+//paramétrage de la zone de saisie
 ion-input{
   --background: white;
   --placeholder-color:black;
-  text-size: 10;
+
 }
+//paramétrage de label
+ion-label{
+  color:white;
+}
+//paramétrage du logo
+ion-icon{
+  width: 200px;
+  height: 70px;
+ }

@@ -1,6 +1,7 @@
 import { Component, NgModule
 } from '@angular/core';
-import { ReactiveFormsModule , FormsModule, FormBuilder
+import {
+  ReactiveFormsModule, FormsModule, FormBuilder, NgForm
 } from '@angular/forms';
 
 @Component({
@@ -15,8 +16,13 @@ export class Membre {
     username: String,
     password: String,
     constructor(membre: { password: StringConstructor; username: StringConstructor; constructor(name: String): void; }) {
-      this.membre = membre;
+      this._membre = membre;
     }
 
   };
 }
+//onSubmitForm(form : NgForm)
+//{
+//  console.log(form.value);
+//  this.dismissModal();
+//}
