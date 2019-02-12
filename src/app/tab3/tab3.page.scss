@@ -1,1 +1,12 @@
-
+//paramétrage du logo
+ion-icon{
+    width: 200px;
+    height: 70px;
+ 
+   }
+   //paramétrage de ion-content
+   ion-content{
+    --background: url('../../assets/images/background_public.jpg') no-repeat 50% 10% ;
+           }
+  
+  

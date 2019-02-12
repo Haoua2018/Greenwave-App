@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Myapp/node_modules/cordova-plugin-ionic-webview/src/android"/>
+	<classpathentry kind="src" path="Myapp/plugins/cordova-plugin-ionic-webview/src/android"/>
+	<classpathentry kind="src" path="node_modules/cordova-plugin-ionic-webview/src/android"/>
+	<classpathentry kind="src" path="plugins/cordova-plugin-ionic-webview/src/android"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

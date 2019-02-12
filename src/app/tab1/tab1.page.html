@@ -4,29 +4,28 @@
 </ion-header>
 <!--le corps de l'application -->
 <ion-content padding=" " >
+    <h5>{{unAttribut}}</h5>
     <ion-card>
       <!--conteneur de la zone de saisie de username et password-->
                 <ion-card-content class="contenu">
                     <!--formulaire de la zone de saisie de username et password-->
-                    <form #f="ngForm" (ngSubmit)="OnSubmitForm(f)">
+                    <form #f="ngForm" (ngSubmit)="onSubmitForm(f)">
 
                     <div class = "list">
-                <p [ngStyle]="{'color':'white'}"> Greenwave</p>
-                <ion-label >
-                    Username
-                </ion-label>
-                <ion-input  placeholder="Username" type="text"> </ion-input>
+                <p [ngStyle]="{'color':'white'}"> Greenwave</p>  <!-- paragraphe affichant un message-->
+                        <!--labelle affichant le username-->
+                        <!--<ion-label >    Username  </ion-label>-->
+                <ion-input  placeholder="Username" type="text" name="username" [(ngModel)]="formulaire.username"> </ion-input>  <!--zone de saisie nom d'utilisateur -->
                 <br/>
-                <ion-label>
-                    Password
-                </ion-label>
-                <ion-input  placeholder="Password" type="password" [clearOnEdit]="true"> </ion-input>
+                        <!--labelle affichant le username-->
+            <!--    <ion-label>        Password        </ion-label>-->
+                <ion-input  placeholder="Password" type="password" clearOnEdit="true" name="password" [(ngModel)]="formulaire.password"> </ion-input> <!--zone de saisie nom d'utilisateur -->
                 <br/>
 
-                <p [ngStyle]="{'color':'white'}"> Mot de passe oublié?</p>
+                <a [ngStyle]="{'color':'white'}"> Mot de passe oublié?</a>
             </div>
 
-            <ion-button>
+            <ion-button type="submit" click="Connexion()">
                 Connexion
             </ion-button>
 
